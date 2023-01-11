@@ -1,0 +1,25 @@
+.header {
+    @include displayFlexSb;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    padding: 2.60416vw 5.2083vw 0 5.2083vw;
+    .group_logo {
+        width: 10.9375vw;
+        height: auto;
+    }
+    .group_toggle {
+        position: relative;
+        width: 20%;
+        font-weight: 600;
+        color: rgb(252, 252, 252);
+        text-align: right;
+        overflow: hidden;
+        .menu_close {
+            position: absolute;
+            display: none;//나중에 수정하기//////////////
+        }
+    }
+}

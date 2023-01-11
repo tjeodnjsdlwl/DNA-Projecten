@@ -1,0 +1,80 @@
+.footer {
+    background: #0a0a0d;
+    padding-left: 2.60416vw;
+    padding-right: 2.60416vw;
+    .fooer_top {
+        @include displayFlexSb;
+        border-bottom: solid 2px #fcfcfc;
+        padding-top: 7vw;
+        padding-bottom: 7vw;
+        .group_view {
+            width: 39vw;
+            .view_title {
+                font-size: 5.2083vw;
+                color: #fcfcfc;
+                font-weight: 600;
+                line-height: 1;
+                margin-bottom: 1.83vw;                
+            }
+            .view_btn {
+                display: inline-block;
+                height: 3.64583vw;
+                font-size: 1.302083vw;                
+                font-weight: 600;
+                line-height: 2.57;
+                background-color: $main-color;
+                color: $main-font-color;
+                border-radius: 5.2083vw;
+                padding: 0 6.0416vw;
+                transition: all 0.6s ease;
+                &:hover {
+                    color: $black-font-color;
+                    background-color: $main-font-color;
+                }
+            }
+        }
+        .group_inform, .group_contact {
+            width: 16.66vw;
+            color: $main-font-color;
+            .inform_title {
+                font-size: 1.875vw;
+                font-weight: 600;
+                line-height: 1;
+                margin-bottom: 14px;
+            }
+            .inform_list {
+                line-height: 2.2;
+                a {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .footer_bottom {
+        @include displayFlexSb;
+        padding-top: 1.875vw;
+        padding-bottom: 1.875vw;
+        .fooer_logo {
+            display: inline-block;
+            width: 10.10416vw;
+            height: auto;
+        }
+        .social_link {
+            display: inline-block;
+            height: 2.34375vw;
+            font-size: 1.0416vw;
+            font-weight: 600;
+            line-height: 2.2;
+            background:rgb(242, 116, 5);
+            color: rgb(252, 252, 252);
+            border-radius: 5.2083vw;
+            margin-right: 2.3vw;
+            padding: 0 1.5625vw;
+            transition: all 0.7s ease;
+            &:hover {
+                color: $black-font-color;
+                background-color: $main-font-color;
+            }
+        }
+    }
+}
